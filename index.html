@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cucina dei Ribelli</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+<header>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="recipes.html">Recipes</a>
+        <ul class="dropdown-content">
+          <li><a href="aperitivo.html">Aperitivo</a></li>
+          <li><a href="antipasti.html">Antipasti</a></li>
+          <li><a href="primi.html">Primi</a></li>
+          <li><a href="secondi.html">Secondi</a></li>
+          <li><a href="contorni.html">Contorni</a></li>
+          <li><a href="insalata.html">Insalata</a></li>
+          <li><a href="dolce.html">Dolce</a></li>
+          <li><a href="digestivo.html">Digestivo</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#maps">Maps</a></li>
+      <li><a href="index.html#reviews">Reviews</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Home / Hero Section -->
+  <section id="home">
+    <div class="hero-container">
+      <img src="images/hero-dish.jpg" alt="A delicious dish" class="hero-image">
+      <!-- Hotspots -->
+      <div class="hotspot" style="top: 10%; left: 40%;" data-content="review1">+</div>
+      <div class="hotspot" style="top: 70%; left: 75%;" data-content="review2">+</div>
+      <div class="hotspot" style="top: 55%; left: 15%;" data-content="tweet1">+</div>
+    </div>
+  </section>
+
+  <!-- Curated Google Maps Section -->
+  <section id="maps">
+    <h2>Curated Google Maps</h2>
+    <p>Explore my curated Google Maps of the best dining spots and hidden gems:</p>
+    <!-- Replace YOUR_MAP_ID with your actual Google Maps ID -->
+    <iframe 
+      src="https://www.google.com/maps/d/embed?mid=YOUR_MAP_ID"
+      width="100%" 
+      height="480" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Google Reviews Section -->
+  <section id="reviews">
+    <h2>Google Reviews</h2>
+    <p>See what my customers have to say:</p>
+    <!-- This is a placeholder for a Google Reviews embed. Replace with your widget/integration code as needed. -->
+    <div class="reviews-widget">
+      <p>Google Reviews will be embedded here.</p>
+    </div>
+  </section>
+
+  <!-- Existing Modal / Pop-up -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" id="popup-close">&times;</span>
+      <div class="popup-text" id="popup-text"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Follow me on BlueSky: <a href="https://bsky.app/profile/stevencaputo.com" target="_blank">@stevencaputo.com</a></p>
+    <p><a href="https://www.google.com/maps/contrib/102572487891367064698" target="_blank">View All My Google Reviews</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

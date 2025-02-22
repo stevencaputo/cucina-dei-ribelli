@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /wp-admin/
+
+Disallow: /dev/
+Disallow: /dev/3D/
+Disallow: /dev/3D/dev/
+Disallow: /dev/3D/dev/CRVR/
+Disallow: /dev/3D/dev/CRVR/ELCA/

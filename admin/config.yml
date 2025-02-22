@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main  # or your default branch
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "recipes"
+    label: "Recipes"
+    folder: "content/recipes"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "category", label: "Category", widget: "select", options: ["Aperitivo", "Antipasti", "Primi", "Secondi", "Contorni", "Insalata", "Dolce", "Digestivo"] }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "ingredients", label: "Ingredients", widget: "list" }
+      - { name: "instructions", label: "Instructions", widget: "markdown" }
