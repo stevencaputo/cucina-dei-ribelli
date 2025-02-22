@@ -1,10 +1,12 @@
 backend:
   name: github
-  repo: stevencaputo/cucina-dei-ribelli   # Replace with your GitHub username and repository name
+  repo: stevencaputo/cucina-dei-ribelli  # Replace with your GitHub username and repository name
+  branch: main                          # Replace with your default branch if different
   client_id: Ov23li93fIi6DB5mG5Vc
-branch: main                         # Replace with your default branch if different
-media_folder: "/images/"         # Folder where uploaded images will be stored
+
+media_folder: "/images/"               # Folder where uploaded images will be stored
 public_folder: "/images/"
+
 collections:
   - name: "recipes"
     label: "Recipes"
