@@ -1,16 +1,16 @@
 backend:
   name: github
-  repo: stevencaputo/cucina-dei-ribelli  # Replace with your GitHub username and repository name
-  branch: main                          # Replace with your default branch if different
+  repo: stevencaputo/cucina-dei-ribelli
+  branch: main
   client_id: Ov23li93fIi6DB5mG5Vc
 
-media_folder: "/images/"               # Folder where uploaded images will be stored
+media_folder: "/images/"
 public_folder: "/images/"
 
 collections:
   - name: "recipes"
     label: "Recipes"
-    folder: "content/recipes"          # Folder to store recipe files (Markdown, for example)
+    folder: "content/recipes"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
